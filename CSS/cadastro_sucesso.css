@@ -1,0 +1,30 @@
+   body {
+       background-color: #816D4F;
+       color: #fff;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       min-height: 100vh;
+   }
+
+   .card {
+       background-color: #1e1e1e;
+       border: none;
+       border-radius: 12px;
+       padding: 2rem;
+       text-align: center;
+       box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+   }
+
+   .icon-check {
+       font-size: 4rem;
+       color: #28a745;
+   }
+
+   .btn-login {
+       margin-top: 1.5rem;
+   }
+
+   .cor-texto {
+       color: white;
+   }

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <title>BookShell</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/BookShell/CSS/estilos.css">
+</head>
+
+<body data-bs-theme="dark">
+
+  <header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand bookshell-logo" href="#">BookShell <br> Livraria & Café</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title bookshell-logo" id="offcanvasNavbarLabel">Painel</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="/BookShell/autenticacao/html/autenticacao.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"
+                  href="/BookShell/autenticacao/html/cadastro.html">Cadastro</a>
+              </li>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input input-checkbox" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">Modo Claro</label> <i class="bi bi-sun px-1"></i>
+                  </div>
+                </a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary py-5">
+        <h2 class="fw-bold">Sua pausa perfeita para Estudar ou Descansar</h2>
+        <p>Boas-vindas à BookShell Livraria & Café! Um ambiente perfeito para estudar ou apreciar um ótimo café!</p>
+      </div>
+    </section>
+    <section class="py-5">
+      <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
+
+      <div class="container d-flex justify-content-around flex-wrap">
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="/BookShell/assets/cafe-card.png" class="card-img-top"
+            alt="Balcão de padaria tradicional com alimentos diversos">
+          <div class="card-body">
+            <h5 class="card-title py-2 fw-bold">Livraria & Café</h5>
+            <p class="card-text">Nosso bistrô oferece uma ampla variedade de cafés, smoothies, deliciosos
+              salgados e sobremesas. Uma excelente opção para quem busca um lugar tranquilo e
+              aconchegante.</p>
+            <a href="#" class="btn botao-padrao w-100 fw-bold" data-bs-toggle="offcanvas" data-bs-target="#canvas-1"
+              aria-controls="offcanvasRight">Mais detalhes</a>
+          </div>
+        </div>
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="/BookShell/assets/livraria-cafe-1.jpg" class="card-img-top"
+            alt="Mesa de buffet com alimentos diversos">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Salas de Estudo</h5>
+            <p class="card-text">Possuímos salas de estudo fechadas para quem quiser apreciar um bom café e focar em
+              seus estudos, ou apenas precisar de privacidade para ler qualquer livro ou ouvir música.</p>
+            <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#canvas-2" aria-controls="offcanvasRight">Mais detalhes</a>
+          </div>
+        </div>
+
+        <div class="card m-4" style="width: 20rem;">
+          <img src="/BookShell/assets/delivery-card.png" class="card-img-top" alt="Caixa aberta armazenando comidas diversas">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Delivery</h5>
+            <p class="card-text">Para quem deseja desfrutar no conforto de casa, oferecemos delivery dos
+              produtos. Com o mesmo cardápio variado de sempre, sem perder nosso sabor e padrão de
+              qualidade.</p>
+            <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas"
+              data-bs-target="#canvas-3" aria-controls="offcanvasRight">Mais detalhes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banners banner-2 d-flex flex-column justify-content-center text-center">
+      <div class="banners-titulo bg-body-secondary py-5">
+        <h2 class="fw-bold">Local aconchegante para todos.</h2>
+        <p>Nosso local é pet friendly, possui espaços para apreciar um bom café, estudar ou apenas descansar!</p>
+      </div>
+    </section>
+
+    <section class="py-5 row mx-0">
+      <h2 class="fw-bold text-center pb-1">Nossos Diferenciais</h2>
+      <div class="row mx-0">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-1" style="width: 18rem;">
+            <img src="/BookShell/assets/produtos-cafe-tradicional.png" class="card-img-top" alt="Xícara de café preto">
+            <div class="card-body text-center">
+              <h3 class="card-text text-center fw-bold">Cafés Tradicionais</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-2" style="width: 18rem;">
+            <img src="/BookShell/assets/produtos-cafe-especial.png" class="card-img-top" alt="Xícara de café preto">
+            <div class="card-body text-center">
+              <h3 class="card-text text-center fw-bold">Cafés Especiais</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-3" style="width: 18rem;">
+            <img src="/BookShell/assets/produtos-vitaminas.png" class="card-img-top" alt="Xícara de café preto">
+            <div class="card-body text-center">
+              <h3 class="card-text text-center fw-bold">Vitaminas</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-4" style="width: 18rem;">
+            <img src="/BookShell/assets/produtos-livraria.png" class="card-img-top" alt="Xícara de café preto">
+            <div class="card-body text-center">
+              <h3 class="card-text text-center fw-bold">Livraria</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-5" style="width: 18rem;">
+            <img src="/BookShell/assets/produtos-salas-estudos.png" class="card-img-top" alt="Xícara de café preto">
+            <div class="card-body text-center">
+              <h3 class="card-text text-center fw-bold">Salas De Estudo</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-6" style="width: 18rem;">
+            <img src="/BookShell/assets/produtos-aluguel-de-livros.png" class="card-img-top" alt="Xícara de café preto">
+            <div class="card-body text-center">
+              <h3 class="card-text text-center fw-bold">Aluguel de Livros</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="py-4 container">
+      <div class="row">
+        <div class="col-10 col-xl-8 mx-auto">
+          <div class="border border-2 rounded p-3">
+            <h3 class="fw-bold p-3">Entre em contato</h3>
+            <form action="" id="contato">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                <label for="floatingNome">Nome</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingEmail" placeholder="nome@exemplo.com">
+                <label for="floatingEmail">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
+                <label for="floatingTelefone">Telefone</label>
+              </div>
+              <label for="nivel-satisfacao" class="form-label p-2">Nível de satisfação:</label>
+              <input type="range" class="form-range input-range" id="nivel-satisfacao">
+              <div class="form-check">
+                <input class="form-check-input input-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Deseja receber novidades por email?
+                </label>
+                <hr>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Deixe sua sugestão</label>
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn botao-padrao w-75 fw-bold mt-3 py-3">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="text-center footer-fundo">
+      <section class="container p-4 pb-0">
+        <a href="#!"><i class="bi bi-whatsapp" style="color: black;"></i></a>
+        <a href="#!"><i class="bi bi-instagram" style="color: black;"></i></a>
+        <a href="#!"><i class="bi bi-facebook" style="color: black;"></i></a>
+      </section>
+      <div class="p-3 fonte-footer">
+        2026 | Experiência Criativa | Projeto Web
+      </div>
+    </footer>
+
+
+  </main>
+
+  <!-- Canvas 1 + Accordion (Sanfona) -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title bookshell-fonte2" id="offcanvasRightLabel">Café & Livraria</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Café
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Café Gourmet da melhor qualidade.</strong> Utilizamos uma combinação meticulosa de cuidados desde
+              o cultivo do café até o momento em que é servido, garantindo a melhor qualidade possível.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Livraria
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Possuímos uma ampla gama de livros de acesso gratuito.</strong> <br> Se precisar estudar e
+              desfrutar de um bom café, não se preocupe! Possuímos diversos livros sobre diversas áreas para estudo, de
+              uso livre dentro de nosso estabelecimento!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Conexão com internet
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Conexão de rápida velocidade.</strong> <br> Oferecemos de forma gratuita, conexão com uma internet
+              rápida e estável para quem precisa em seus estudos ou trabalho!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canvas 2 + Accordion (Sanfona) -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title bookshell-fonte2" id="offcanvasRightLabel">Salas de Estudo</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Salas de estudo
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Salas com acesso à livros e atendimento personalizado.</strong> <br> Utilizamos uma combinação
+              meticulosa de cuidados desde o cultivo do café até o momento em que é servido, garantindo a melhor
+              qualidade possível.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Aluguel de Livros
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Possuímos diversos livros que podem ser alugados.</strong> <br> Se precisar estudar e desfrutar de
+              um bom café, não se preocupe! Nossas salas de estudo exclusivas possuem atendimento personalizado com
+              conexão à internet de alta velocidade para que você possa estudar com privacidade e ainda desfrutar de um
+              excelente café.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Área VIP
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Área VIP para membros.</strong> <br> Nosso delivery conta com todas as opções e variedades
+              disponíveis em nosso cardápio, além de aluguel de livros. Para os clientes com assinatura VIP, oferecemos
+              descontos exclusivos e brindes únicos a cada entrega!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canvas 3 + Accordion (Sanfona) -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-3" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title bookshell-fonte2" id="offcanvasRightLabel">Delivery</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Café & Livraria
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Café Gourmet da melhor qualidade.</strong> Utilizamos uma combinação meticulosa de cuidados desde
+              o cultivo do café até o momento em que é servido, garantindo a melhor qualidade possível.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Salas de Estudo
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Salas de estudo com atendimento exclusivo.</strong> <br> Se precisar estudar e desfrutar de um bom
+              café, não se preocupe! Nossas salas de estudo exclusivas possuem atendimento personalizado com conexão à
+              internet de alta velocidade para que você possa estudar com privacidade e ainda desfrutar de um excelente
+              café.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Delivery
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Delivery rápido e eficiente.</strong> <br> Nosso delivery conta com todas as opções e variedades
+              disponíveis em nosso cardápio, além de aluguel de livros. Para os clientes com assinatura VIP, oferecemos
+              descontos exclusivos e brindes únicos a cada entrega!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal-1 -->
+
+  <article class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fw-bold fs-5" id="exampleModalLabel">Cafés Tradicionais</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/BookShell/assets/produtos-cafe-tradicional.png" class="w-100"
+            alt="Xícara de café preto com grãos em volta do prato">
+          <strong>Descubra o Sabor Incomparável dos Melhores Grãos de Café!</strong>
+          <br><br>
+          <p>Quando o assunto é café, a qualidade é tudo. A diferença está no grão, e nós temos o prazer de oferecer a
+            você o melhor do mercado!
+            Nosso café é cultivado com cuidado,utilizando práticas sustentáveis que respeitam o meio ambiente e garantem
+            um produto final de excelência.</p>
+          <p>Cada grão é selecionado manualmente, garantindo que apenas os melhores sejam escolhidos para levar até a
+            sua xícara. O processo de torrefação
+            é feito com precisão, para preservar os aromas e sabores únicos que só os grãos de alta qualidade podem
+            oferecer.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            Janela</button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Modal-2 -->
+
+  <article class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fw-bold fs-5" id="exampleModalLabel">Cafés Especiais</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/BookShell/assets/produtos-cafe-especial.png" class="w-100"
+            alt="Xícara de café preto com grãos em volta do prato">
+          <strong>Uma Experiência Única em Cada Xícara!</strong>
+          <br><br>
+          <p>Nossos cafés especiais são cultivados nas melhores regiões do Brasil, em altitudes ideais, onde o clima e o
+            solo se combinam para criar grãos com características únicas.
+            Cada lote é cuidadosamente selecionado e preparado para garantir um café com notas surpreendentes e um
+            perfil sensorial sofisticado, perfeito para os verdadeiros apreciadores.</p>
+          <p>A torrefação é feita de forma artesanal, para que o sabor, aroma e qualidade se destaquem em cada detalhe.
+            Com um café especial, você sente a diferença já no primeiro gole, com uma experiência única que vai além da
+            rotina.</p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            Janela</button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Modal-3 -->
+
+  <article class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fw-bold fs-5" id="exampleModalLabel">Vitaminas</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/BookShell/assets/produtos-vitaminas.png" class="w-100"
+            alt="Xícara de café preto com grãos em volta do prato">
+          <strong>Vitaminas Nutritivas: Energia e Saúde em cada copo!</strong>
+          <br><br>
+          <p>A vida moderna exige muito de nós, e para manter a energia lá em cima e a saúde em dia, é essencial ter um
+            combustível de qualidade. Nossas vitaminas foram desenvolvidas para oferecer exatamente isso: um mix
+            perfeito de nutrientes essenciais para fortalecer o seu corpo e trazer aquele ânimo extra para o seu dia!
+          </p>
+          <p>Feitas com ingredientes frescos e naturais, nossas vitaminas são ricas em vitaminas, minerais e
+            antioxidantes, que ajudam a manter sua imunidade alta, melhorar a disposição e nutrir sua pele e cabelos.
+            Perfeitas para quem tem uma rotina corrida, mas não abre mão de cuidar da saúde com muito sabor e qualidade.
+          </p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            Janela</button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Modal-4 -->
+
+  <article class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fw-bold fs-5" id="exampleModalLabel">Livraria</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/BookShell/assets/produtos-livraria-2.png" class="w-100"
+            alt="Xícara de café preto com grãos em volta do prato">
+          <br><br>
+          <strong>Bem-vindo à nossa Livraria! 📚</strong>
+          <br><br>
+          <p>Na nossa livraria, cada página vira um convite para novas descobertas! Aqui, você encontrará uma curadoria
+            cuidadosamente escolhida, com os melhores livros dos mais diversos gêneros: literatura clássica, ficção
+            contemporânea, biografias inspiradoras, Tecnologia e segurança da informação e muito mais! Seja você um
+            ávido leitor ou alguém em busca de um
+            presente especial, temos a obra certa para você.
+          </p>
+          <p>Além disso, nossa livraria é o lugar perfeito para se perder nas páginas de um bom livro enquanto desfruta
+            do aconchego do nosso café. Venha explorar, ler, e se encantar com o universo literário que preparamos com
+            tanto carinho para você!
+          </p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            Janela</button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Modal-5 -->
+
+  <article class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fw-bold fs-5" id="exampleModalLabel">Salas de Estudo</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/BookShell/assets/produtos-sala-estudos.png" class="w-100"
+            alt="Xícara de café preto com grãos em volta do prato">
+          <br><br>
+          <strong>Concentre-se nas nossas Salas de Estudo! 📖</strong>
+          <br><br>
+          <p>Buscando um ambiente tranquilo e inspirador para seus estudos ou trabalho? Nossas Salas de Estudo foram
+            projetadas para oferecer o máximo de conforto e concentração. Com espaços silenciosos, iluminação ideal e
+            mesas confortáveis, você encontrará o local perfeito para se dedicar aos seus projetos, leituras ou
+            preparação para exames.
+          </p>
+          <p>E para tornar sua experiência ainda mais agradável, aproveite o café delicioso da nossa loja para uma pausa
+            revigorante. Venha estudar, aprender e crescer em um ambiente que estimula a produtividade e a criatividade!
+          </p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            Janela</button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Modal-6 -->
+
+  <article class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fw-bold fs-5" id="exampleModalLabel">Aluguel de Livros</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/BookShell/assets/produtos-aluguel-de-livros-2.png" class="w-100"
+            alt="Xícara de café preto com grãos em volta do prato">
+          <br><br>
+          <strong>Aluguel de Livros! 📚✨</strong>
+          <br><br>
+          <p>Gostaria de ler mais, mas sem compromisso a longo prazo? Nosso serviço de Aluguel de Livros é perfeito para
+            você! Oferecemos uma vasta seleção de títulos para todos os gostos e idades, para que você possa ler à
+            vontade sem precisar comprar. Desde os clássicos imortais até os lançamentos mais desejados, temos sempre
+            algo novo para você explorar.
+          </p>
+          <p>Alugue os livros que deseja, leia no seu tempo e, quando terminar, traga-os de volta para escolher novas
+            histórias. É simples, prático e uma ótima forma de manter sua leitura sempre fresca e diversificada.
+            <br>
+            Venha conferir e se apaixonar pelo nosso acervo!
+          </p>
+        </div>
+        <div class="modal-footer mx-auto">
+          <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar
+            Janela</button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- BootStrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="/BookShell/JS/js_main/darkmode.js"></script>
+</body>
+
+</html>
