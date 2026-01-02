@@ -14,7 +14,7 @@ $credenciais = [
     'dbname' => 'cadastro_bookshell'
 ];
 
-// 2. Definição de uma chave mestra forte (32 chars para AES-256)
+// 2. Definição de uma chave mestra forte (descriptografia) (32 chars para AES-256)
 // IMPORTANTE: Essa mesma chave deverá estar no db.php
 define('CHAVE_MESTRA', 'xKZglAeweh1cMLTd8u3dASMjKhRinAeY');
 

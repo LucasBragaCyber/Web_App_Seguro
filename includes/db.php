@@ -30,9 +30,6 @@ if (!$creds) {
 }
 
 // 4. Conectar usando MySQLi
-/* DICA DE SEGURANÇA: O 'mysqli_report' ajuda a pegar erros de SQL sem expor dados sensíveis 
-   se configurado corretamente, mas em dev ajuda muito.
-*/
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 try {

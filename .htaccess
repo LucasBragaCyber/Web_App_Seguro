@@ -1,0 +1,11 @@
+<Files "credenciais.enc">
+    Require all denied
+</Files>
+
+<Files "anotacoes.txt">
+    Require all denied
+</Files>
+
+<Files "mailer.php">
+    Require all denied
+</Files>

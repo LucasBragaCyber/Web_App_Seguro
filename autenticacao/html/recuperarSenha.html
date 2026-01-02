@@ -34,8 +34,10 @@
 					<div class="offcanvas-body">
 						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 							<li class="nav-item"><a class="nav-link" href="/BookShell/index.html">Início</a></li>
-							<li class="nav-item"><a class="nav-link" href="/BookShell/autenticacao/html/autenticacao.html">Login</a></li>
-							<li class="nav-item"><a class="nav-link" href="/BookShell/autenticacao/html/cadastro.html">Cadastro</a></li>
+							<li class="nav-item"><a class="nav-link"
+									href="/BookShell/autenticacao/html/autenticacao.html">Login</a></li>
+							<li class="nav-item"><a class="nav-link"
+									href="/BookShell/autenticacao/html/cadastro.html">Cadastro</a></li>
 							<li class="nav-item"><a class="nav-link" href="/BookShell/index.html">Contato</a></li>
 						</ul>
 					</div>
@@ -50,8 +52,8 @@
 				<div class="login100-pic js-tilt cafe-flutuante" data-tilt>
 					<img src="/BookShell/assets/produtos-cafe-especial.png" alt="café flutuante" style="width: 340px;">
 				</div>
-<!-- /BookShell/autenticacao/php/recuperarSenha.php -->
-				<form class="login100-form validate-form" action="../php/recuperarSenha.php" method="POST">
+				<!-- /BookShell/autenticacao/php/recuperarSenha.php -->
+				<form class="login100-form validate-form" id="formRecuperacao">
 					<span class="login100-form-title bookshell-fonte3 py-3">
 						Recuperar Senha
 					</span>
@@ -61,7 +63,7 @@
 						<span class="focus-input100"></span>
 						<span class="symbol-input100"><i class="bi bi-envelope-at-fill"></i></span>
 					</div>
-					
+
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn fonte-2" type="submit" style="color: white;">
@@ -83,6 +85,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
 		crossorigin="anonymous"></script>
+	<script src="../../JS/recuperar_senha.js"></script>
 	<script src="/BookShell/autenticacao/recursos/jquery/jquery-3.2.1.min.js"></script>
 	<script src="/BookShell/autenticacao/recursos/tilt/tilt.jquery.min.js"></script>
 	<script>
