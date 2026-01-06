@@ -1,7 +1,7 @@
 <?php
 // /BookShell/autenticacao/php/redefinirSenha.php
 
-require '../../includes/db.php';
+require '../includes/db.php';
 
 header('Content-Type: application/json');
 
@@ -16,7 +16,7 @@ if (isset($dados->encryptedKey) && isset($dados->encryptedData)) {
 
     // Caminho da chave privada (Atenção aos níveis de diretório)
     // Estamos em /BookShell/autenticacao/php/, a chave está em /BookShell/includes/chaves/
-    $privateKeyPath = __DIR__ . '/../../includes/chaves/privada.pem';
+    $privateKeyPath = __DIR__ . '/../includes/chaves/privada.pem';
 
     if (!file_exists($privateKeyPath)) {
         http_response_code(500);

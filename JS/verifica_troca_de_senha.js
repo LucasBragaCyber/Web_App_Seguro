@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // --- FIM DA CRIPTOGRAFIA ---
 
             // Envio para o Backend
-            const response = await fetch('../php/redefinirSenha.php', {
+            const response = await fetch('../../api/redefinirSenha.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)

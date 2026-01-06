@@ -1,6 +1,7 @@
 <?php
 // api/login.php
 
+// Configuração de Cookies
 session_set_cookie_params([
     'lifetime' => 0, 
     'path' => '/', 
