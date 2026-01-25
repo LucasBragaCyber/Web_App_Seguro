@@ -1,0 +1,11 @@
+# .dockerignore - Arquivos que não serão passados para a imagem da aplicação
+.git
+.gitignore
+.vscode
+.idea
+docker-compose.yml
+Dockerfile
+setup_db.php
+anotacoes.txt
+README.md
+/sql
