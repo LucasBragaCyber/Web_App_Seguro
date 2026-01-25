@@ -1,16 +1,13 @@
-1. Para visualizar as informações do PHP do servidor, executar na URL projetoweb.test/BookShell/info.php
-2. Proteger o par de chaves assimetricas:
-    a.Mover a pasta do par de chaves RSA para fora do "www"
-        No arquivo includes/decrypt_payload.php (e em qualquer outro que acesse as chaves), alterar a linha:
-            De: $privateKeyPath = __DIR__ . '/chaves/privada.pem';
-            Para: $privateKeyPath = __DIR__ . '/../../chaves-projetoweb/chaves/privada.pem';
-    
-    b. Proteger o acesso com .htaccess
-        Criar o arquivo dentro do diretório que precisa ser protegido:
+1. Para visualizar as informações do PHP do servidor:
+    Na URL http://localhost:8080/BookShell/info.php
+
+2. Proteção de arquivos e/ou pastas:
+    a. Proteger o acesso com .htaccess
+        - Criar o arquivo dentro do diretório que precisa ser protegido:
         Require all denied
 
 3. Comando usado para geração do par de chaves RSA:
-    a. No cmd do Laragon, dentro da pasta do projeto em "/includes/chaves"
+    a. No cmd do VSCode, em "/includes/chaves"
     b. Geração da chave privada:
         openssl genpkey -algorithm RSA -out privada.pem -pkeyopt rsa_keygen_bits:2048
 
