@@ -31,8 +31,7 @@ $payload = base64_encode($iv . $dadosCriptografados);
 
 // 4. Salva no arquivo
 if (file_put_contents(__DIR__ . '/credenciais.enc', $payload)) {
-    echo "Arquivo 'credenciais.enc' gerado com sucesso! <br>";
-    echo "Arquivo 'includes/credenciais.enc' atualizado para Docker! <br>";
+    echo "Arquivo de conexão ao banco 'credenciais.enc' gerado com sucesso! <br>";
 } else {
     echo "Erro ao gravar arquivo.";
 }

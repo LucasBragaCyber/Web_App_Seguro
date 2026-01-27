@@ -126,16 +126,23 @@ docker-compose up -d --build
 ```
 
 **3. Configuração de Segurança Inicial (Crítico):**
-- Para gerar o arquivo criptografado de conexão com o banco, acesse a seguinte URL no navegador uma única vez:
+- Para gerar o arquivo criptografado de conexão com o banco:
 
-```yml
-http://localhost:8080/BookShell/includes/setup_db.php
+1. É preciso executar o arquivo de configuração da conexão do banco (`setup_db.php`) para gerar e criptografar as credenciais de acesso.
+2. Executar o script PHP diretamente de dentro do container, usando o terminal.
+  - No seu terminal (fora do Docker), execute:
+```bash
+docker exec -it bookshell_app php /var/www/html/BookShell/includes/setup_db.php
 ```
+3. Após ver a mensagem de sucesso, o arquivo `credenciais.enc` será criado.
+- Por segurança, o script `setup_db.php` deve ser *removido* ou *bloqueado*. Aqui estamos protegendo nas configurações do servidor (`apache-security.conf`).
 
-⚠️ Nota:
-1. no `.htaccess` em `includes`, apagar a linha `Require all denied` para poder executar o arquivo de configuração da conexão do banco.
-2. Após ver a mensagem de sucesso, o arquivo `credenciais.enc` será criado.
-Por segurança, o script `setup_db.php` deve ser removido ou bloqueado em ambiente de produção. Volte no `.htaccess` e escreva novamente `Require all denied`. Assim, o arquivo estará protegido de acesso externo, pelo navegador.
+*Explicação:*
+
+- `docker exec`: Executa um comando dentro do container.
+- `-it`: Modo interativo.
+- `bookshell_app`: Nome do nosso container (definido no docker-compose).
+- `php` ... : O comando para rodar o script.
 
 **4. Acessar a Aplicação:**
 
